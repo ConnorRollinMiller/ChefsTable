@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="Assignment 2" content="Website Plan">
+      <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+      <meta name="author" content="Connor Miller">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+      <!-- Browser Tab -->
+      <title>Chef's Table Restaurant</title>
+      <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+      <!-- FontAwesome -->
+      <script src="https://use.fontawesome.com/96b45c4e29.js"></script>
+
+      <!-- Links to external stylesheets-->
+      <link href="css/style.css" rel="stylesheet" type="text/css">
+      <link href="css/layout.css" rel="stylesheet" type="text/css">
+
+
+   </head>
+
+   <body id="page">
+
+      <header class="header-big-height">
+
+         <img src="assets/images/logo2.png" class="logo" id="desktop-logo" alt="Logo">
+         <img src="assets/images/logo.png" class="logo big-logo" id="mobile-logo" alt="Logo">
+
+         <i class="fa fa-bars fa-2x hidden" id="mobile-menu-open" aria-hidden="true"></i>
+         <i class="fa fa-window-close-o fa-2x hidden" id="mobile-menu-close" aria-hidden="true"></i>
+
+         <nav>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#specials">Specials</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#events">Events</a>
+            <a href="#contact">Contact</a>
+         </nav>
+
+         <div id="cart-container">
+            <div class="display" id="cart">
+               <hr id="cart-container-top-line">
+               <strong id="cart-price">cart/$0.00</strong>
+               <div id="cart-body">
+                  <div id="cart-handle">
+                  </div>
+                  <strong id="cart-item-number">0</strong>
+               </div>
+            </div>
+
+            <!--
+            <div id="cart-dropdown-menu-container">
+
+               <figure id="dropdown-menu-img-container">
+
+               </figure>
+               <article id="dropdown-menu-item-info-container">
+                  <h5 class="item-name"></h5>
+                  <strong class="price"></strong>
+
+               </article>
+            </div>
+         </div>
+      -->
+
+
+      </header>
+
+      <aside id="top-header">
+         <div id="top-header-content">
+            <div id="top-header-contact">
+               <strong id="top-email">Support@ChefsTable.com</strong>
+               <strong id="top-address">645 Hennepin Ave, Minneapolis, MN 55403</strong>
+               <strong id="top-phone">(952) 555-7756</strong>
+            </div>
+            <div id="top-icons">
+               <a href="https://www.facebook.com" target="_blank" class="fa fa-facebook fa-2x gold" aria-hidden="true"></a>
+               <a href="https://www.yelp.com" target="_blank" class="fa fa-yelp fa-2x gold" aria-hidden="true"></a>
+               <a href="https://www.twitter.com" target="_blank" class="fa  fa-twitter fa-2x gold" aria-hidden="true"></a>
+               <a href="https://www.tripadvisor.com" target="_blank" class="fa fa-tripadvisor fa-2x gold" aria-hidden="true"></a>
+               <a href="https://www.instagram.com" target="_blank" class="fa fa-instagram fa-2x gold" aria-hidden="true"></a>
+            </div>
+         </div>
+
+      </aside>
+
+      <aside>
+
+         <section class="banner">
+            <div class="carousel-outter">
+               <span class="fa fa-angle-left fa-3x controls" id="btn-prev" aria-hidden="true"></span>
+               <div class="carousel-inner">
+                  <div class="slides" id="slider-img1">
+                     <h2 class="neon-animation alternate-font2 slider-text ">We Serve Passion</h2>
+                  </div>
+                  <div class="slides" id="slider-img2">
+                     <h2 class="neon-animation alternate-font2 slider-text ">Eat Responsibly</h2>
+                  </div>
+                  <div class="slides" id="slider-img3">
+                     <h2 class="neon-animation alternate-font2 slider-text ">Loosen Up A Bit</h2>
+                  </div>
+               </div>
+               <span class="fa fa-angle-right fa-3x controls" id="btn-next" aria-hidden="true"></span>
+            </div>
+         </section>
+
+      </aside>
+
+      <main id="main">
+
+         <section class="row" id="about">
+            <h3 class="section-heading center"><span class="neon-animation">Freshness</span>You Taste</h3>
+            <article class="row center about-container">
+               <div class="col-6 about-text-container-left">
+                  <i class="fa fa-check-square-o fa-3x gold" aria-hidden="true"></i>
+                  <h3>Commitment to Freshness</h3>
+                  <p>We pride ourselves on our commitment to freshness by using locally sourced food that never contains any preservatives or additives. Our chefs chop and prepare food fresh each morning, never the day before.</p>
+               </div>
+               <figure class="col-6 about-img-container-right">
+                  <img src="assets/images/freshfinal.png" id="freshness-img" alt="Fresh Ingredients">
+               </figure>
+            </article>
+
+            <article class="row center about-container">
+               <div class="col-6 about-img-container-right">
+                  <img src="assets/images/quality.png" id="quality-img" alt="Quality Food">
+               </div>
+               <div class="col-6 about-text-container-left">
+                  <i class="fa fa-thumbs-o-up fa-3x gold" aria-hidden="true"></i>
+                  <h3 class="">Commitment to Quality</h3>
+                  <p>We never compromise quality - it's the secret to our success. Even during the lean years, we continued to use the "best of the best" to give you our best. We are 100% committed to quality service.</p>
+               </div>
+            </article>
+
+            <article class="row center about-container">
+               <div class="col-6 about-text-container-left">
+                  <i class="fa fa-fire fa-3x gold" aria-hidden="true"></i>
+                  <h3 class="">Commitment to Passion</h3>
+                  <p>We have a passion for food, we're all foodaholics. Our heart and soul goes into everything we do. The food business is our life and we bring that passion to our food.</p>
+               </div>
+               <figure class="col-6 about-img-container-right">
+                  <img src="assets/images/food-prep.png" id="passion-img" alt="Prep Food Delicately">
+               </figure>
+            </article>
+         </section>
+
+         <section class="row" id="menu">
+            <h3 class="section-heading center"><span class="neon-animation">Discover</span class="neon-animation">Our Menu</h3>
+            <div class="row">
+               <div id="breakfast">
+                  <div class="menu-hover-container">
+                     <ul class="menu-items">
+                        <li>
+                           <div class="menu-items-container">
+                              <img class="item-picture" src="assets/images/breakfast1.jpg" alt="Eggs Benedict">
+                              <div class="menu-item-info">
+                                 <h5 class="item-name">Eggs Benedict</h5>
+                                 <strong class="price">$12.00</strong>
+                              </div>
+                              <i class="add-button-icon fa fa-plus-square-o " aria-hidden="true"></i>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="menu-items-container">
+                              <img class="item-picture" src="assets/images/breakfast2.jpg" alt="Oatmeal">
+                              <div class="menu-item-info">
+                                 <h5 class="item-name">Oatmeal</h5>
+                                 <strong class="price">$5.00</strong>
+                              </div>
+                              <i class="add-button-icon fa fa-plus-square-o " aria-hidden="true"></i>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="menu-items-container">
+                              <img class="item-picture" src="assets/images/breakfast3.jpg" alt="Cake stack">
+                              <div class="menu-item-info">
+                                 <h5 class="item-name">Cake stacks</h5>
+                                 <strong class="price">$8.50</strong>
+                              </div>
+                              <i class="add-button-icon fa fa-plus-square-o " aria-hidden="true"></i>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="menu-title-bg">
+                     <div class="menu-title-border"></div>
+                  </div>
+                  <div class="menu-title">
+                     <h4>Breakfast</h4>
+                     <img src="assets/images/separator.png"><br>
+                     <strong class="black">8am - 11am</strong>
+                  </div>
+               </div>
+               <div id="lunch">
+                  <div class="menu-hover-container">
+                     <ul class="menu-items">
+                        <li>
+                           <div class="menu-items-container">
+                              <img class="item-picture" src="assets/images/lunch1.jpg" alt="Salmon">
+                              <div class="menu-item-info">
+                                 <h5 class="item-name">Salmon</h5>
+                                 <strong class="price">$15.75</strong>
+                              </div>
+                              <i class="add-button-icon fa fa-plus-square-o " aria-hidden="true"></i>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="menu-items-container">
+                              <img class="item-picture" src="assets/images/lunch2.jpg" alt="Chicken w/ Noodles">
+                              <div class="menu-item-info">
+                                 <h5 class="item-name" data-name="Chicken w/ Noodles" data-price="13.25">Chicken w/ noodles</h5>
+                                 <strong class="price">$13.25</strong>
+                              </div>
+                              <i class="add-button-icon fa fa-plus-square-o " aria-hidden="true"></i>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="menu-items-container">
+                              <img class="item-picture" src="assets/images/lunch3.jpg" alt="Pita Tacos">
+                              <div class="menu-item-info">
+                                 <h5 class="item-name">pita tacos</h5>
+                                 <strong class="price">$8.95</strong>
+                              </div>
+                              <i class="add-button-icon fa fa-plus-square-o " aria-hidden="true"></i>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="menu-title-bg">
+                     <div class="menu-title-border"></div>
+                  </div>
+                  <div class="menu-title">
+                     <h4>Lunch</h4>
+                     <img src="assets/images/separator.png"><br>
+                     <strong class="black">11am - 4pm</strong>
+                  </div>
+               </div>
+               <div id="dinner">
+                  <div class="menu-hover-container">
+                     <ul class="menu-items">
+                        <li>
+                           <div class="menu-items-container">
+                              <img class="item-picture" src="assets/images/dinner1.jpg" alt="Jalepeno Burger">
+                              <div class="menu-item-info">
+                                 <h5 class="item-name">jalepeno burger</h5>
+                                 <strong class="price">$11.95</strong>
+                              </div>
+                              <i class="add-button-icon fa fa-plus-square-o " aria-hidden="true"></i>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="menu-items-container">
+                              <img class="item-picture" src="assets/images/dinner2.jpg" alt="Baby Back Ribs">
+                              <div class="menu-item-info">
+                                 <h5 class="item-name">Baby back ribs</h5>
+                                 <strong class="price">$22.75</strong>
+                              </div>
+                              <i class="add-button-icon fa fa-plus-square-o " aria-hidden="true"></i>
+                           </div>
+                        </li>
+                        <li>
+                           <div class="menu-items-container">
+                              <img class="item-picture" src="assets/images/dinner3.jpg" alt="Ribeye">
+                              <div class="menu-item-info">
+                                 <h5 class="item-name">Ribeye</h5>
+                                 <strong class="price">$23.25</strong>
+                              </div>
+                              <i class="add-button-icon fa fa-plus-square-o " aria-hidden="true"></i>
+                           </div>
+                        </li>
+                     </ul>
+                  </div>
+                  <div class="menu-title-bg">
+                     <div class="menu-title-border"></div>
+                  </div>
+                  <div class="menu-title">
+                     <h4>Dinner</h4>
+                     <img src="assets/images/separator.png"><br>
+                     <strong class="black">5pm - 11pm</strong>
+                  </div>
+               </div>
+            </div>
+            <div id="menu-section-background"></div>
+         </section>
+
+         <section id="specials">
+            <h3 class="section-heading center"><span class="neon-animation">Specialty</span>entrees</h3>
+            <div class="row">
+               <figure class="col-4 center">
+                  <img src="assets/images/specialty1.png" class="specialty-entrees" alt="New York Strip">
+                  <figcaption class="alternate-font specialty-heading">New York Strip</figcaption>
+               </figure>
+               <figure class="col-4 center">
+                  <img src="assets/images/specialty2.png" class="specialty-entrees" alt="Fruit Salad">
+                  <figcaption class="alternate-font specialty-heading">Fruit Salad</figcaption>
+               </figure>
+               <figure class="col-4 center">
+                  <img src="assets/images/specialty3.png" class="specialty-entrees" alt="Filet Mignon">
+                  <figcaption class="alternate-font specialty-heading">Filet Mignon</figcaption>
+               </figure>
+            </div>
+         </section>
+
+         <section id="testimonials">
+            <!-- <h3 class="section-heading center"><span class="neon-animation">Costumer</span>Testimonials</h3> -->
+            <figure id="testimonial-bg"></figure>
+            <div class="slider-container">
+               <div class="fa fa-angle-left fa-3x slide-arrow-left" aria-hidden="true" onclick="minusSlide(-1)"></div>
+               <article class="mySlides animate-in row">
+                  <img src="assets/images/customer1.jpg" class="testimonial-customer-img" alt="Customer Image">
+                  <div class="col-8 testimonial-text">
+                     <div>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </div>
+                     <h3>Rachel Anderson</h3>
+                     <hr>
+                     <p>Absolutely love EVERYTHING! Staff was amazing! The restuarants look - beautiful! The food and service are always top notch. This is our "go to" place. If you haven't been there before, or it's been a while, I highly recommend you give it a try. You won't be disappointed!</p>
+                  </div>
+               </article>
+               <article class="mySlides animate-in row">
+                  <img src="assets/images/customer2.jpg" class="testimonial-customer-img col-4" alt="Custumer Image">
+                  <div class="col-8 testimonial-text">
+                     <div>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                     </div>
+                     <h3>Thomas Stumpf</h3>
+                     <hr>
+                     <p>Probably the best restaurant I've ever been to. Unbelievable great food, lots of fresh made sides. I could not eat enough to taste all they offer. Great service, too. Definitely not cheap, but worth every cent!</p>
+                  </div>
+               </article>
+               <div class="fa fa-angle-right fa-3x slide-arrow-right" aria-hidden="true" onclick="plusSlide(1)"></div>
+            </div>
+            <aside id="dots-container">
+               <div class="dots white" onclick="currentSlide(1)"></div>
+               <div class="dots" onclick="currentSlide(2)"></div>
+            </aside>
+         </section>
+
+         <section class="row" id="events">
+            <h3 class="section-heading center"><span class="neon-animation">Upcoming</span>Events</h3>
+            <div class="row event-container">
+               <div id="event-inner-container1">
+                  <div id="event-img1"></div>
+                  <h4 id="event-text1">join us for The Game</h4>
+               </div>
+
+               <div id="event-inner-container2">
+                  <div id="event-img2"></div>
+                  <h4 id="event-text2">Cooking classes<br>offered</h4>
+               </div>
+
+               <div id="event-inner-container3">
+                  <div id="event-img3"></div>
+                  <h4 id="event-text3">Wine tasting<br>Wednesays</h4>
+               </div>
+            </div>
+         </section>
+
+         <section id="contact">
+            <!--  <h3 class="section-heading center"><span class="neon-animation">Send Your</span>Feedback</h3> -->
+            <div class="row">
+
+               <div id="map"></div>
+
+            </div>
+         </section>
+      </main>
+
+      <!-- end of main container -->
+
+      <footer class="center">
+         <div id="footer-social-icons">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener" class="fa fa-facebook fa gold" aria-hidden="true"></a>
+            <a href="https://www.yelp.com" target="_blank" rel="noopener" class="fa fa-yelp fa gold" aria-hidden="true"></a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener" class="fa  fa-twitter fa gold" aria-hidden="true"></a>
+            <a href="https://www.tripadvisor.com" target="_blank" rel="noopener" class="fa fa-tripadvisor fa gold" aria-hidden="true"></a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener" class="fa fa-instagram fa gold" aria-hidden="true"></a>
+         </div>
+         <div id="footer-contact">
+            <p class="footer-contact-icons alternate-font" id="phone">(952) 555-7756</p>
+            <p class="footer-contact-icons alternate-font" id="address">645 Hennepin Ave, Minneapolis, MN 55403</p>
+            <p class="footer-contact-icons alternate-font" id="email">Support@ChefsTable.com</p>
+         </div>
+         <div id="footer-design-credit">
+            <h5 class="alternate-font">Website by <a href="https://www.instagram.com/connorbiz/?hl=en" target="_blank" rel="noopener">Connor Miller</a></h5>
+         </div>
+      </footer>
+
+   </body>
+
+   <!-- JQuery Library -->
+   <script src="js/jquery.js"></script>
+
+   <!-- My File Scripts -->
+   <script src="js/script.js"></script>
+
+
+   <!--google maps key: AIzaSyC4Ghu3xPnSwB5j1nmDJTi0-MsBZB1cJJk-->
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC4Ghu3xPnSwB5j1nmDJTi0-MsBZB1cJJk&callback=initMap"></script>
+
+
+</html>
